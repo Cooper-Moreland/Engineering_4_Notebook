@@ -53,7 +53,7 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 
 ## Media Test
 
-Your readme will have various images and gifs on it. Upload a test image and test gif to make sure you've got the process figured out. Pick whatever image and gif you want!
+[test.py](raspberry-pi/temp.py) ![test gif](images/Rotating_earth_(large).png)
 
 ### Test Link
 
