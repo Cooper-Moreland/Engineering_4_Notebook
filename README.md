@@ -53,7 +53,7 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 
 ## Media Test
 
-[test.py](raspberry-pi/temp.py) ![test gif](images/Rotating_earth_(large).png)
+[test.py](raspberry-pi/temp.py) ![Rotating_earth_(large)](https://github.com/Cooper-Moreland/Engineering_4_Notebook/assets/71406906/2f8658ea-5f2d-4c27-823a-6129dda746b8)
 
 ### Test Link
 
