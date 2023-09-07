@@ -76,7 +76,7 @@ time.sleep(5.0) # green led on for 5 secs
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true)
 
-### [Code
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-2%20countdown.py)
 
 ### Reflection
 
