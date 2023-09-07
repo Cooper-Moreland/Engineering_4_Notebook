@@ -45,7 +45,7 @@ https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%2
 
 ### Description
 
-You need to countdown from 10 seconds down to Liftoff (at 0 seconds). That countdown must be printed to the serial monitor.
+Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff.
 
 ### Evidence 
 
@@ -79,6 +79,8 @@ time.sleep(5.0) # green led on for 5 secs
 ### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-2%20countdown.py)
 
 ### Reflection
+
+long led leg is (+) short leg is (-), use a 10k resistor so you don't blind yourself.
 
 &nbsp;
 
