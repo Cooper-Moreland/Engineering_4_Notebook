@@ -76,11 +76,9 @@ time.sleep(5.0) # green led on for 5 secs
 
 [1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true)
 
-### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-2%20countdown.py)
+### [Code
 
 ### Reflection
-
-helpful [link](https://www.w3schools.com/python/gloss_python_for_range.asp) for the type of code you need for this assignment.
 
 &nbsp;
 
