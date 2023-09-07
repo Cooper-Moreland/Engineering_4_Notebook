@@ -74,7 +74,7 @@ time.sleep(5.0) # green led on for 5 secs
 
 ### Wiring
 
-[1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true)
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true)
 
 ### [Code
 
