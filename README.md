@@ -47,7 +47,7 @@ https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%2
 
 Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff.
 
-### Evidence 
+### [Evidence/Video](https://photos.app.goo.gl/GaD2i5RsebkBdS12A)
 
 ### Wiring
 
