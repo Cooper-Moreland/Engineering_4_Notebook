@@ -49,6 +49,12 @@ Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial mon
 
 ### Evidence 
 
+### Wiring
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true)
+
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-2%20countdown.py)
+
 ```python
 # type: ignore
 import time
@@ -71,12 +77,6 @@ led2.value = True
 time.sleep(5.0) # green led on for 5 secs
 
 ```
-
-### Wiring
-
-![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true)
-
-### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-2%20countdown.py)
 
 ### Reflection
 
