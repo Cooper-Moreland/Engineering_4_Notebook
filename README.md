@@ -39,8 +39,6 @@ N/A
 
 helpful [link](https://www.w3schools.com/python/gloss_python_for_range.asp) for the type of code you need for this assignment.
 
-https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true
-
 ## launch_pad_part_2
 
 ### Description
