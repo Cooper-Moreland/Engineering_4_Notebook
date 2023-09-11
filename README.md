@@ -5,6 +5,7 @@
 ## Table of Contents
 * [launch pad part 1](#launch_pad_part_1)
 * [launch pad part 2](#launch_pad_part_2)
+* [launch pad part 3](#launch_pad_part_3)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -80,7 +81,7 @@ time.sleep(5.0) # green led on for 5 secs
 
 long led leg is (+) short leg is (-), use a 10k resistor so you don't blind yourself.
 
-## launch_pad_part_2
+## launch_pad_part_3
 
 ### Description
 
@@ -92,7 +93,7 @@ Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial mon
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true)
 
-### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-2%20countdown.py)
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/countdown%20p3.py)
 
 ```python
 # type: ignore
