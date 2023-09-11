@@ -33,4 +33,4 @@ while True:
         else:
             print("BTN is up")
 
-    prev_state = cur_state # reset button value
+    prev_state = cur_state # reset button value to unpressed
