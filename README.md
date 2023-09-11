@@ -4,6 +4,7 @@
 
 ## Table of Contents
 * [launch pad part 1](#launch_pad_part_1)
+* [launch pad part 2](#launch_pad_part_2)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -38,6 +39,105 @@ N/A
 
 helpful [link](https://www.w3schools.com/python/gloss_python_for_range.asp) for the type of code you need for this assignment.
 
+## launch_pad_part_2
+
+### Description
+
+Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff.
+
+### [Evidence/Video](https://photos.app.goo.gl/GaD2i5RsebkBdS12A)
+
+### Wiring
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true)
+
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-2%20countdown.py)
+
+```python
+# type: ignore
+import time
+import board
+import digitalio
+
+led1 = digitalio.DigitalInOut(board.GP16)
+led1.direction = digitalio.Direction.OUTPUT
+led2 = digitalio.DigitalInOut(board.GP17)
+led2.direction = digitalio.Direction.OUTPUT # red and green led output location
+
+for x in range(10, 0, -1): # in the range from 10 to 0 going down by 1
+    print(x) # print the variable
+    led1.value = True
+    time.sleep(0.5)
+    led1.value = False
+    time.sleep(0.5) # blink red led
+print("LIFTOFF!")
+led2.value = True
+time.sleep(5.0) # green led on for 5 secs
+
+```
+
+### Reflection
+
+long led leg is (+) short leg is (-), use a 10k resistor so you don't blind yourself.
+
+## launch_pad_part_2
+
+### Description
+
+Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff. Include a physical button that starts the countdown.
+
+### [Evidence/Video](https://photos.app.goo.gl/dzKehut5DK1rK4h1A)
+
+### Wiring
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-07%20135157.png?raw=true)
+
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-2%20countdown.py)
+
+```python
+# type: ignore
+import time
+import board
+import digitalio
+from digitalio import DigitalInOut, Direction, Pull
+
+led1 = digitalio.DigitalInOut(board.GP16)
+led1.direction = digitalio.Direction.OUTPUT
+led2 = digitalio.DigitalInOut(board.GP17)
+led2.direction = digitalio.Direction.OUTPUT # red and green led output location
+
+btn = DigitalInOut(board.GP15)
+btn.direction = Direction.INPUT
+btn.pull = Pull.UP # set pin number and input as pull up
+
+prev_state = btn.value # new variable
+
+while True:
+    cur_state = btn.value # new variable
+    if cur_state != prev_state: # if the state of the button changes
+        if not cur_state: # if the button is pressed
+            print("BTN is down")
+            for x in range(10, 0, -1): # in the range from 10 to 0 going down by 1
+                print(x) # print the variable
+                led1.value = True
+                time.sleep(0.5)
+                led1.value = False
+                time.sleep(0.5) # blink red led
+            led2.value = True 
+            print("LIFTOFF!")
+            time.sleep(3.0)
+            led2.value = False # turn on green light and print liftoff then turn the light off after 3 seconds
+        else:
+            print("BTN is up")
+
+    prev_state = cur_state # reset button value
+
+```
+
+### Reflection
+
+[useful page](https://learn.adafruit.com/multi-tasking-with-circuitpython/buttons) for figuring out how to code button presses. 
+
 &nbsp;
 
 ## Onshape_Assignment_Template
@@ -63,10 +163,3 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 ## Media Test
 
 [test.py](raspberry-pi/test.py) ![Rotating_earth_(large)](https://github.com/Cooper-Moreland/Engineering_4_Notebook/assets/71406906/2f8658ea-5f2d-4c27-823a-6129dda746b8)![tree-736885_1280](https://github.com/Cooper-Moreland/Engineering_4_Notebook/assets/71406906/8525bdf9-da0a-4325-b4ea-236d2c498c46)
-
-
-### Test Link
-
-### Test Image
-
-### Test GIF
