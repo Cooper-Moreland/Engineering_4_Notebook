@@ -144,15 +144,15 @@ while True:
 
 ### Description
 
-Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff. Include a physical button that starts the countdown.
+Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff. Include a physical button that starts the countdown. Actuate a 180-degree servo on liftoff to simulate the launch tower disconnecting.
 
-### [Evidence/Video](https://photos.app.goo.gl/dzKehut5DK1rK4h1A)
+### [Evidence/Video](
 
 ### Wiring
 
-![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-11%20134841.png?raw=true)
 
-### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/countdown%20p3.py)
+
+### [Code](
 
 ```python
 # type: ignore
