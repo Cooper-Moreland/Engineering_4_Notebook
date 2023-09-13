@@ -152,7 +152,7 @@ Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial mon
 
 
 
-### [Code](
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/countdown%20p4.py)
 
 ```python
 # type: ignore
