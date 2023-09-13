@@ -150,7 +150,7 @@ Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial mon
 
 ### Wiring
 
-
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/launch_pad_part_4.png?raw=true)
 
 ### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/countdown%20p4.py)
 
