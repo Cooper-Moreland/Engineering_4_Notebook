@@ -190,14 +190,14 @@ while True:
                 time.sleep(0.5)
                 led1.value = False
                 time.sleep(0.5) # blink red led
-            led2.value = True 
+            led2.value = True # turn on green led
             print("LIFTOFF!")
-            for angle in range(0, 180, 1):  # 0 - 180 degrees, 5 degrees at a time.
+            for angle in range(0, 180, 1):  # 0 - 180 degrees, 1 degrees at a time.
                 my_servo.angle = angle
                 time.sleep(0.01)
             time.sleep(3.0)
             led2.value = False # turn on green light and print liftoff then turn the light off after 3 seconds
-            for angle in range(180, 0, -1):  # 0 - 180 degrees, 5 degrees at a time.
+            for angle in range(180, 0, -1):  # 180 - 0 degrees, 1 degrees at a time.
                 my_servo.angle = angle
                 time.sleep(0.01) # reset servo
         else:
