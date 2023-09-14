@@ -146,7 +146,7 @@ while True:
 
 Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff. Include a physical button that starts the countdown. Actuate a 180-degree servo on liftoff to simulate the launch tower disconnecting.
 
-### [Evidence/Video](
+### [Evidence/Video](https://photos.app.goo.gl/TCHF5rtduMvoWjru7)
 
 ### Wiring
 
