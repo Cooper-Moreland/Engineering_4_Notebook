@@ -146,13 +146,15 @@ while True:
 
 Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff. Include a physical button that starts the countdown. Actuate a 180-degree servo on liftoff to simulate the launch tower disconnecting.
 
-### [Evidence/Video](
+### [Evidence/Video](https://photos.app.goo.gl/PXsUUYmJFtQ5w9Ju9)
+
+![servogif](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/servogif.gif?raw=true)
 
 ### Wiring
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/launch_pad_part_4.png?raw=true)
 
-
-### [Code](
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/countdown%20p4.py)
 
 ```python
 # type: ignore
@@ -160,6 +162,8 @@ import time
 import board
 import digitalio
 from digitalio import DigitalInOut, Direction, Pull
+import pwmio
+from adafruit_motor import servo
 
 led1 = digitalio.DigitalInOut(board.GP16)
 led1.direction = digitalio.Direction.OUTPUT
@@ -169,6 +173,9 @@ led2.direction = digitalio.Direction.OUTPUT # red and green led output location
 btn = DigitalInOut(board.GP15)
 btn.direction = Direction.INPUT
 btn.pull = Pull.UP # set pin number and input as pull up
+
+pwm = pwmio.PWMOut(board.GP14, duty_cycle=2 ** 15, frequency=50) #placeholder for whatever pin I choose
+my_servo = servo.Servo(pwm)
 
 prev_state = btn.value # new variable
 
@@ -185,12 +192,18 @@ while True:
                 time.sleep(0.5) # blink red led
             led2.value = True 
             print("LIFTOFF!")
+            for angle in range(0, 180, 1):  # 0 - 180 degrees, 5 degrees at a time.
+                my_servo.angle = angle
+                time.sleep(0.01)
             time.sleep(3.0)
             led2.value = False # turn on green light and print liftoff then turn the light off after 3 seconds
+            for angle in range(180, 0, -1):  # 0 - 180 degrees, 5 degrees at a time.
+                my_servo.angle = angle
+                time.sleep(0.01) # reset servo
         else:
             print("BTN is up")
 
-    prev_state = cur_state # reset button value
+    prev_state = cur_state # reset button value to unpressed
 
 ```
 
