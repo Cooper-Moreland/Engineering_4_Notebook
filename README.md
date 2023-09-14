@@ -148,6 +148,8 @@ Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial mon
 
 ### [Evidence/Video](https://photos.app.goo.gl/PXsUUYmJFtQ5w9Ju9)
 
+![servogif](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/servogif.gif?raw=true)
+
 ### Wiring
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/launch_pad_part_4.png?raw=true)
