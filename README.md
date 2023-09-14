@@ -7,6 +7,7 @@
 * [launch pad part 2](#launch_pad_part_2)
 * [launch pad part 3](#launch_pad_part_3)
 * [launch pad part 4](#launch_pad_part_4)
+* [crash avoidance part 1](#crash_avoidance_part_1)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -190,14 +191,14 @@ while True:
                 time.sleep(0.5)
                 led1.value = False
                 time.sleep(0.5) # blink red led
-            led2.value = True 
+            led2.value = True # turn on green led
             print("LIFTOFF!")
-            for angle in range(0, 180, 1):  # 0 - 180 degrees, 5 degrees at a time.
+            for angle in range(0, 180, 1):  # 0 - 180 degrees, 1 degrees at a time.
                 my_servo.angle = angle
                 time.sleep(0.01)
             time.sleep(3.0)
             led2.value = False # turn on green light and print liftoff then turn the light off after 3 seconds
-            for angle in range(180, 0, -1):  # 0 - 180 degrees, 5 degrees at a time.
+            for angle in range(180, 0, -1):  # 180 - 0 degrees, 1 degrees at a time.
                 my_servo.angle = angle
                 time.sleep(0.01) # reset servo
         else:
@@ -210,6 +211,12 @@ while True:
 ### Reflection
 
 Download [8.x](https://circuitpython.org/libraries) python library to use imports like servo, this one is in adafruit_motor. Every GP pin on the Pico is capable of PWM, but there is one catch. Some of the pins run on the same PWM channels, and you can only use one pin on the channel. For example, if I am driving one servo with board.GP0, I cannot drive a second servo with board.GP16, because they both use the PWM_A[0] channel, check [this](https://www.codrey.com/wp-content/uploads/2021/09/Raspberry-Pi-Pico-PWM-Pins.jpg) to see if the pins pwms overlap.
+
+## crash_avoidance_part_1
+
+### Reflection
+
+[google doc for assignment](https://docs.google.com/document/d/1g1PIIIek534bj5pJsN9bA1CqbQQEbnUsOCIuNnpgo2o/edit). The [Pico](https://www.raspberrypi-spy.co.uk/wp-content/uploads/2021/01/raspberry_pi_pico_pinout.png) has a bunch of pins that can be used for I2C. Any of the blue labeled pins are I2C capable, but you must ensure that the SCL and SDA pins (labeled in blue) you use are from the same I2C bus.
 
 &nbsp;
 
