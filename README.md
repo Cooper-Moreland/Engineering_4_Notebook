@@ -220,6 +220,8 @@ The module must have an accelerometer that continuously reports x, y, and z acce
 
 ### [Evidence/Video](https://photos.app.goo.gl/STigwdacgecz1s276)
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/accel.gif?raw=true)
+
 ### Wiring
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-15%20133802.png?raw=true)
