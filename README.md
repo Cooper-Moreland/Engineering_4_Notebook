@@ -216,6 +216,8 @@ Download [8.x](https://circuitpython.org/libraries) python library to use import
 
 ### Description
 
+The module must have an accelerometer that continuously reports x, y, and z acceleration values on the serial monitor.
+
 ### [Evidence/Video](
 
 ### Wiring
