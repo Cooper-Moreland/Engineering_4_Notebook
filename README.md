@@ -143,7 +143,7 @@ while True:
 
 ### Reflection
 
-[useful page](https://learn.adafruit.com/multi-tasking-with-circuitpython/buttons) for figuring out how to code button presses. 
+[useful page](https://learn.adafruit.com/multi-tasking-with-circuitpython/buttons) for figuring out how to code button presses. If you use pull.up the default value for the button is true and you wire it to ground and a pin number. If you use pull.down defualt value is false and you wire it to 3v3 and the pin number.
 
 ## launch_pad_part_4
 
