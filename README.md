@@ -257,6 +257,46 @@ while True:
 
 [google doc for assignment](https://docs.google.com/document/d/1g1PIIIek534bj5pJsN9bA1CqbQQEbnUsOCIuNnpgo2o/edit). The [Pico](https://www.raspberrypi-spy.co.uk/wp-content/uploads/2021/01/raspberry_pi_pico_pinout.png) has a bunch of pins that can be used for I2C. Any of the blue labeled pins are I2C capable, but you must ensure that the SCL and SDA pins (labeled in blue) you use are from the same I2C bus.
 
+## crash_avoidance_part_2
+
+### Description
+
+The module must have an accelerometer that continuously reports x, y, and z acceleration values. The module must have an LED that turns on if the helicopter is tilted to 90 degrees. The module must be powered by a mobile power source.
+
+### Evidence/Video
+
+### Wiring
+
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/crash%20avoidance%20p2.py)
+
+```python
+# type: ignore
+import adafruit_mpu6050
+import busio
+import board
+import time
+import digitalio
+
+led = digitalio.DigitalInOut(board.GP0) 
+led.direction = digitalio.Direction.OUTPUT
+sda_pin = board.GP14
+scl_pin = board.GP15
+i2c = busio.I2C(scl_pin, sda_pin) 
+mpu = adafruit_mpu6050.MPU6050(i2c) # set up for variables and pin locations
+
+while True:
+    acc = mpu.acceleration # new var
+    print(f"X: {acc[0]} m/s^2 Y: {acc[1]} m/s^2 Z: {acc[2]} m/s^2") # print x, y, and z values
+    time.sleep(0.75) # debounce
+    led.value = False # default led is off
+    if acc[0] > 9 or acc[0] < -9:
+        print("mayday")
+        led.value = True    # if object is tilted 90 or -90 degrees turn the led on
+
+```
+
+### Reflection
+
 &nbsp;
 
 ## Onshape_Assignment_Template
