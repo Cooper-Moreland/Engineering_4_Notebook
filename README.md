@@ -85,7 +85,7 @@ time.sleep(5.0) # green led on for 5 secs
 
 ### Reflection
 
-long led leg is (+) short leg is (-), use a 10k resistor so you don't blind yourself.
+long led leg is (+) short leg is (-), use a 10k resistor so you don't blind yourself. New board pin placements are new to learn but they mostly just go in a u formation starting at the top left and going from GP1 to GPwhateverthelastnumberis.
 
 ## launch_pad_part_3
 
