@@ -20,6 +20,14 @@ You need to countdown from 10 seconds down to Liftoff (at 0 seconds). That count
 
 ### Evidence 
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/launchpadp1.gif?raw=true)
+
+### Wiring
+
+N/A 
+
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-1%20countdown.py)
+
 ```python
 # type: ignore
 import time
@@ -32,15 +40,9 @@ print("LIFTOFF!")
 
 ```
 
-### Wiring
-
-N/A 
-
-### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-1%20countdown.py)
-
 ### Reflection
 
-helpful [link](https://www.w3schools.com/python/gloss_python_for_range.asp) for the type of code you need for this assignment.
+helpful [link](https://www.w3schools.com/python/gloss_python_for_range.asp) for the type of code you need for this assignment. to upload a video download the video go to [ezgif.com/video-to-gif](ezgif.com/video-to-gif) upload the video then convert to gif upload that gif to githib and copy the link address. then use the code line "![anthing here](here goes the link address)"
 
 ## launch_pad_part_2
 
@@ -48,7 +50,9 @@ helpful [link](https://www.w3schools.com/python/gloss_python_for_range.asp) for 
 
 Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff.
 
-### [Evidence/Video](https://photos.app.goo.gl/GaD2i5RsebkBdS12A)
+### Evidence/Video
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/launchpadp2.gif?raw=true)
 
 ### Wiring
 
@@ -81,7 +85,7 @@ time.sleep(5.0) # green led on for 5 secs
 
 ### Reflection
 
-long led leg is (+) short leg is (-), use a 10k resistor so you don't blind yourself.
+long led leg is (+) short leg is (-), use a 10k resistor so you don't blind yourself. New board pin placements are new to learn but they mostly just go in a u formation starting at the top left and going from GP1 to GPwhateverthelastnumberis.
 
 ## launch_pad_part_3
 
@@ -89,7 +93,9 @@ long led leg is (+) short leg is (-), use a 10k resistor so you don't blind your
 
 Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff. Include a physical button that starts the countdown.
 
-### [Evidence/Video](https://photos.app.goo.gl/dzKehut5DK1rK4h1A)
+### Evidence/Video
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/launchpadp3.gif?raw=true)
 
 ### Wiring
 
@@ -139,7 +145,7 @@ while True:
 
 ### Reflection
 
-[useful page](https://learn.adafruit.com/multi-tasking-with-circuitpython/buttons) for figuring out how to code button presses. 
+[useful page](https://learn.adafruit.com/multi-tasking-with-circuitpython/buttons) for figuring out how to code button presses. If you use pull.up the default value for the button is true and you wire it to ground and a pin number. If you use pull.down defualt value is false and you wire it to 3v3 and the pin number.
 
 ## launch_pad_part_4
 
@@ -242,7 +248,7 @@ mpu = adafruit_mpu6050.MPU6050(i2c) # set up for variables and pin locations
 
 while True:
     acc = mpu.acceleration # new var
-    print(f"X: {acc[0]} m/s^2 Y: {acc[1]} m/s^2 Z: {acc[1]} m/s^2") # print x, y, and z values
+    print(f"X: {acc[0]} m/s^2 Y: {acc[1]} m/s^2 Z: {acc[2]} m/s^2") # print x, y, and z values
     time.sleep(0.75) # debounce
 
 ```
