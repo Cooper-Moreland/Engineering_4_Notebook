@@ -20,6 +20,14 @@ You need to countdown from 10 seconds down to Liftoff (at 0 seconds). That count
 
 ### Evidence 
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/launchpadp1.gif?raw=true)
+
+### Wiring
+
+N/A 
+
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-1%20countdown.py)
+
 ```python
 # type: ignore
 import time
@@ -32,15 +40,9 @@ print("LIFTOFF!")
 
 ```
 
-### Wiring
-
-N/A 
-
-### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/2-1%20countdown.py)
-
 ### Reflection
 
-helpful [link](https://www.w3schools.com/python/gloss_python_for_range.asp) for the type of code you need for this assignment.
+helpful [link](https://www.w3schools.com/python/gloss_python_for_range.asp) for the type of code you need for this assignment. to upload a video download the video go to [ezgif.com/video-to-gif](ezgif.com/video-to-gif) upload the video then convert to gif upload that gif to githib and copy the link address. then use the code line "![anthing here](here goes the link address)"
 
 ## launch_pad_part_2
 
