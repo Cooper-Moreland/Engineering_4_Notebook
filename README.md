@@ -89,7 +89,9 @@ long led leg is (+) short leg is (-), use a 10k resistor so you don't blind your
 
 Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor. Blink a red light each second of the countdown, and turn on a green LED to signify liftoff. Include a physical button that starts the countdown.
 
-### [Evidence/Video](https://photos.app.goo.gl/dzKehut5DK1rK4h1A)
+### Evidence/Video
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/launchpadp3.gif?raw=true)
 
 ### Wiring
 
