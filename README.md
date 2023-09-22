@@ -265,6 +265,8 @@ The module must have an accelerometer that continuously reports x, y, and z acce
 
 ### Evidence/Video
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/crashavoidancep2.gif?raw=true)
+
 ### Wiring
 
 ### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/crash%20avoidance%20p2.py)
