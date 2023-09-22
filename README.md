@@ -302,6 +302,8 @@ while True:
 
 ### Reflection
 
+WeVideo can capture the screen and record on a camera at the same time which is useful for showing the serial monitor. The new lines of code is just an if statement 9 and -9 correspond to 90 and -90 degrees which is something to remember if I need to do this again. GND to GND and Sw to 3v3 for the new battery thing to power the raspberry pico.
+
 &nbsp;
 
 ## Onshape_Assignment_Template
