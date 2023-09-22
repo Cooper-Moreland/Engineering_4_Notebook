@@ -8,6 +8,7 @@
 * [launch pad part 3](#launch_pad_part_3)
 * [launch pad part 4](#launch_pad_part_4)
 * [crash avoidance part 1](#crash_avoidance_part_1)
+* [crash avoidance part 2](#crash_avoidance_part_2)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
