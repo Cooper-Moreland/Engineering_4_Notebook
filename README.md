@@ -270,6 +270,8 @@ The module must have an accelerometer that continuously reports x, y, and z acce
 
 ### Wiring
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-22%20133132.png?raw=true)
+
 ### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/crash%20avoidance%20p2.py)
 
 ```python
