@@ -8,6 +8,8 @@
 * [launch pad part 3](#launch_pad_part_3)
 * [launch pad part 4](#launch_pad_part_4)
 * [crash avoidance part 1](#crash_avoidance_part_1)
+* [crash avoidance part 2](#crash_avoidance_part_2)
+* [crash avoidance part 3](#crash_avoidance_part_3)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -256,6 +258,66 @@ while True:
 ### Reflection
 
 [google doc for assignment](https://docs.google.com/document/d/1g1PIIIek534bj5pJsN9bA1CqbQQEbnUsOCIuNnpgo2o/edit). The [Pico](https://www.raspberrypi-spy.co.uk/wp-content/uploads/2021/01/raspberry_pi_pico_pinout.png) has a bunch of pins that can be used for I2C. Any of the blue labeled pins are I2C capable, but you must ensure that the SCL and SDA pins (labeled in blue) you use are from the same I2C bus.
+
+## crash_avoidance_part_2
+
+### Description
+
+The module must have an accelerometer that continuously reports x, y, and z acceleration values. The module must have an LED that turns on if the helicopter is tilted to 90 degrees. The module must be powered by a mobile power source.
+
+### Evidence/Video
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/crashavoidancep2.gif?raw=true)
+
+### Wiring
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-22%20133132.png?raw=true)
+
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/crash%20avoidance%20p2.py)
+
+```python
+# type: ignore
+import adafruit_mpu6050
+import busio
+import board
+import time
+import digitalio
+
+led = digitalio.DigitalInOut(board.GP0) 
+led.direction = digitalio.Direction.OUTPUT
+sda_pin = board.GP14
+scl_pin = board.GP15
+i2c = busio.I2C(scl_pin, sda_pin) 
+mpu = adafruit_mpu6050.MPU6050(i2c) # set up for variables and pin locations
+
+while True:
+    acc = mpu.acceleration # new var
+    print(f"X: {acc[0]} m/s^2 Y: {acc[1]} m/s^2 Z: {acc[2]} m/s^2") # print x, y, and z values
+    time.sleep(0.75) # debounce
+    led.value = False # default led is off
+    if acc[0] > 9 or acc[0] < -9:
+        print("mayday")
+        led.value = True    # if object is tilted 90 or -90 degrees turn the led on
+
+```
+
+### Reflection
+
+WeVideo can capture the screen and record on a camera at the same time which is useful for showing the serial monitor. The new lines of code are just an if statement 9 and -9 correspond to 90 and -90 degrees which is something to remember if I need to do this again. GND to GND and Sw to 3v3 for the new battery thing to power the Raspberry Pico. [link for this assignment](https://docs.google.com/document/d/1aIv2ZZ7GjsV_WlQ2PhkF72Qr4De23a8TKEGw4vXBKfE/edit?usp=sharing)
+
+## crash_avoidance_part_3
+
+### Description
+
+The module must have an accelerometer that continuously reports x, y, and z acceleration values. The module must have an LED that turns on if the helicopter is tilted to 90 degrees. The module must be powered by a mobile power source. The module must have an onboard screen that prints x, y, and z angular velocity values (rad/s) rounded to 3 decimal places.
+
+### Evidence/Video
+
+### Wiring
+
+### Code
+
+### Reflection
 
 &nbsp;
 
