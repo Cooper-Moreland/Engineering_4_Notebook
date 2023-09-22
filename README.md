@@ -9,6 +9,7 @@
 * [launch pad part 4](#launch_pad_part_4)
 * [crash avoidance part 1](#crash_avoidance_part_1)
 * [crash avoidance part 2](#crash_avoidance_part_2)
+* [crash avoidance part 3](#crash_avoidance_part_3)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -303,6 +304,20 @@ while True:
 ### Reflection
 
 WeVideo can capture the screen and record on a camera at the same time which is useful for showing the serial monitor. The new lines of code are just an if statement 9 and -9 correspond to 90 and -90 degrees which is something to remember if I need to do this again. GND to GND and Sw to 3v3 for the new battery thing to power the Raspberry Pico. [link for this assignment](https://docs.google.com/document/d/1aIv2ZZ7GjsV_WlQ2PhkF72Qr4De23a8TKEGw4vXBKfE/edit?usp=sharing)
+
+## crash_avoidance_part_3
+
+### Description
+
+The module must have an accelerometer that continuously reports x, y, and z acceleration values. The module must have an LED that turns on if the helicopter is tilted to 90 degrees. The module must be powered by a mobile power source. The module must have an onboard screen that prints x, y, and z angular velocity values (rad/s) rounded to 3 decimal places.
+
+### Evidence/Video
+
+### Wiring
+
+### Code
+
+### Reflection
 
 &nbsp;
 
