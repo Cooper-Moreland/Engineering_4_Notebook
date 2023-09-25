@@ -317,7 +317,7 @@ The module must have an accelerometer that continuously reports x, y, and z acce
 
 ### Wiring
 
-### Code
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/crash%20avoidance%20p3.py)
 
 ```python
 # type: ignore
