@@ -9,12 +9,13 @@ import digitalio
 import terminalio
 import displayio
 
+displayio.release_displays() # this needs to be first in the code
+
 sda_pin = board.GP14
 scl_pin = board.GP15
 i2c = busio.I2C(scl_pin, sda_pin) 
 mpu = adafruit_mpu6050.MPU6050(i2c, address=0x68) # set up for variables and pin locations
 
-displayio.release_displays()
 display_bus = displayio.I2CDisplay(i2c, device_address=0x3d, reset=board.GP21)
 display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64) # pin address and setup for oled display
 
@@ -41,6 +42,6 @@ while True:
     # \n breaks the line and goes to next row for the following text
     time.sleep(0.75) # debounce
     led.value = False # default led is off
-    if acc[0] > 9 or acc[0] < -9:
+    if acc[0] > 8 or acc[0] < -8:
         print("mayday")
         led.value = True    # if object is tilted 90 or -90 degrees turn the led on
