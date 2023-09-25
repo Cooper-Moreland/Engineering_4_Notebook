@@ -1,4 +1,5 @@
 # type: ignore
+# libraries: adafruit_displayio_ssd1306.mpy | adafruit_display_text | adafruit_mpu6050.mpy | adafruit_bus_device | adafruit_register
 import time
 import adafruit_mpu6050
 import busio

@@ -1,4 +1,5 @@
 # type: ignore
+# libraries: adafruit_mpu6050.mpy | adafruit_bus_device | adafruit_register
 import adafruit_mpu6050
 import busio
 import board

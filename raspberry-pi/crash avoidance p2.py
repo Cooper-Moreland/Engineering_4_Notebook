@@ -1,4 +1,5 @@
 # type: ignore
+# libraries: adafruit_mpu6050.mpy | adafruit_bus_device | adafruit_register
 import adafruit_mpu6050
 import busio
 import board
@@ -19,4 +20,4 @@ while True:
     led.value = False # default led is off
     if acc[0] > 9 or acc[0] < -9:
         print("mayday")
-        led.value = True    # if object is tilted 90 degrees turn the led on
+        led.value = True    # if object is tilted 90 or -90 degrees turn the led on
