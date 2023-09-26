@@ -317,6 +317,8 @@ The module must have an accelerometer that continuously reports x, y, and z acce
 
 ### Wiring
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-26%20125639.png?raw=true)
+
 ### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/crash%20avoidance%20p3.py)
 
 ```python
@@ -371,6 +373,8 @@ while True:
 ```
 
 ### Reflection
+
+breadboards can connect to each other for more space. on the oled screen Clk goes to scl, Data goes to sda, reset pin can go to any random GP. Make sure the external battery is fully pugged in so it doesn't fry your board, but if that happens uninstall circuit python from vs code then reinstall.
 
 &nbsp;
 
