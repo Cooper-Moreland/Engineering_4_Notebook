@@ -384,7 +384,14 @@ breadboards can connect to each other for more space. on the oled screen Clk goe
 
 ### Description
 
-Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+design a 3D-printed beam in Onshape with the goal of maximizing the weight the beam can hold before failure. The beam fails if either of the following two conditions are met: The beam breaks The beam bends more than 35 mm. 
+* must use the provided attachment block with no modifications
+* The beam with the attachment block must be able to fully engage with the holder
+* must use the example eye bolt mounting geometry
+* The center of the eyebolt hole must be 180 mm from the front face of the attachment block (in a direction perpendicular to the front face)
+* No part of the beam may extend below the bottom face of the attachment block
+* All vertical angles must be >= 45° measured relative to the horizontal plane (no overhangs)
+* must be PLA material The entire beam, including attachment block, must weight <= 13 grams
 
 ### [Onshape Link](https://cvilleschools.onshape.com/documents/a4035a22ba64776340356020/w/11ed539d4eb836d893f3062b/e/6c6a605be107bca51b691821?renderMode=0&uiState=651c472fb79d590382eddea4)
 
