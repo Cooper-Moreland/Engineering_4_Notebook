@@ -407,6 +407,8 @@ Screenshots aren't as good as downloading an image of your Onshape build when yo
 
 Ms. Showalter as an evil witch.
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Tamara-Showalter-Laurel-Molloy.jpg?raw=true)
+
 ## Onshape_Assignment_Template
 
 ### Description
