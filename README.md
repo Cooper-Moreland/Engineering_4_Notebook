@@ -409,6 +409,8 @@ Ms. Showalter as an evil witch.
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Tamara-Showalter-Laurel-Molloy.jpg?raw=true)
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/istockphoto-163922970-612x612.jpg?raw=true)
+
 ## Onshape_Assignment_Template
 
 ### Description
