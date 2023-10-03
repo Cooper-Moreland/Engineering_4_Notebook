@@ -401,7 +401,7 @@ design a 3D-printed beam in Onshape with the goal of maximizing the weight the b
 
 ### Reflection
 
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+Screenshots aren't as good as downloading an image of your Onshape build. To do that click the three pancakes button in the top left, click print, have it say letter then portrait, move object to the center of the square, then click download.
 
 ## Onshape_Assignment_Template
 
