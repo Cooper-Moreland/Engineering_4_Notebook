@@ -397,7 +397,7 @@ design a 3D-printed beam in Onshape with the goal of maximizing the weight the b
 
 ### Part Image
 
-![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Beam%20Starter%20+%20Holder.png?raw=true)
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-03%20125101.png?raw=true)
 
 ### Reflection
 
