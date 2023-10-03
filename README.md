@@ -10,6 +10,7 @@
 * [crash avoidance part 1](#crash_avoidance_part_1)
 * [crash avoidance part 2](#crash_avoidance_part_2)
 * [crash avoidance part 3](#crash_avoidance_part_3)
+* [beam starter](#beam_starter)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -379,19 +380,33 @@ breadboards can connect to each other for more space. on the oled screen Clk goe
 
 &nbsp;
 
-## Onshape_Assignment_Template
+## beam starter
 
-### Assignment Description
+### Description
 
 Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
 
-### Part Link 
-
-[Create a link to your Onshape document](https://cvilleschools.onshape.com/documents/003e413cee57f7ccccaa15c2/w/ea71050bb283bf3bf088c96c/e/c85ae532263d3b551e1795d0?renderMode=0&uiState=62d9b9d7883c4f335ec42021). Don't forget to turn on link sharing in your Onshape document so that others can see it. 
+### [Onshape Link](https://cvilleschools.onshape.com/documents/a4035a22ba64776340356020/w/11ed539d4eb836d893f3062b/e/6c6a605be107bca51b691821?renderMode=0&uiState=651c472fb79d590382eddea4)
 
 ### Part Image
 
-Take a nice screenshot of your Onshape document. 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-03%20125101.png?raw=true)
+
+### Reflection
+
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+
+## Onshape_Assignment_Template
+
+### Description
+
+Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+
+### [Onshape Link](
+
+### Part Image
+
+![1](
 
 ### Reflection
 
