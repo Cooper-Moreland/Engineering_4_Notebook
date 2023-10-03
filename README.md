@@ -403,6 +403,10 @@ design a 3D-printed beam in Onshape with the goal of maximizing the weight the b
 
 Screenshots aren't as good as downloading an image of your Onshape build when you need a transparent background. To do that click the three pancakes button in the top left, click print, have it say letter then portrait, move object to the center of the square, then click download.
 
+# Onshape Pumpkin Contest Idea
+
+Ms. Showalter as an evil witch.
+
 ## Onshape_Assignment_Template
 
 ### Description
