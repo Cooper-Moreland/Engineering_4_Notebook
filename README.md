@@ -10,7 +10,8 @@
 * [crash avoidance part 1](#crash_avoidance_part_1)
 * [crash avoidance part 2](#crash_avoidance_part_2)
 * [crash avoidance part 3](#crash_avoidance_part_3)
-* [beam starter](#beam_starter) 
+* [fea part 1](#fea_part_1)
+* [fea part 3](#fea_part_3)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
