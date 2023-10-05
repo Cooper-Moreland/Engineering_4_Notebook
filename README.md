@@ -380,7 +380,7 @@ breadboards can connect to each other for more space. on the oled screen Clk goe
 
 &nbsp;
 
-## beam_starter
+## fea_part_1
 
 ### Description
 
@@ -410,6 +410,22 @@ Ms. Showalter as an evil witch.
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Tamara-Showalter-Laurel-Molloy.jpg?raw=true)
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/istockphoto-163922970-612x612.jpg?raw=true)
+
+## fea_part_3
+
+### Description
+
+Run static finite element analyses on your beam to determine what areas need to be improved.
+
+### [Onshape Link](https://cvilleschools.onshape.com/documents/a4035a22ba64776340356020/w/11ed539d4eb836d893f3062b/e/5adecb98b448bac80376089d?renderMode=0&uiState=651ef85fed43c56222174dd1)
+
+### Part Image
+
+![1](
+
+### Reflection
+
+Right where the thickness of the beam ends is where it's most likely to snap. Ours had a lot of determination to not snap and that's what really matters. The good news is we can't do worse so improving it will be easy, we'll most likely give up width for our next design and add height all the way through so it's less likely to break under the 30 Newtons of force.
 
 ## Onshape_Assignment_Template
 
