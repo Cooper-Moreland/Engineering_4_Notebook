@@ -423,7 +423,7 @@ Run static finite element analyses on your beam to determine what areas need to 
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-05%20134920.png?raw=true)
 
-![1](
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-05%20135108.png?raw=true)
 
 ![1](
 
