@@ -267,7 +267,7 @@ while True:
 
 ### Description
 
-The module must have an accelerometer that continuously reports x, y, and z acceleration values. The module must have an LED that turns on if the helicopter is tilted to 90 degrees. The module must be powered by a mobile power source.
+The module must have an accelerometer that continuously reports x, y, and z acceleration values. The module must have an LED that turns on if the helicopter is tilted to 90 degrees. The module must be powered by a mobile power source. One thing must be fixed and make the system you're using into a group.
 
 ### Evidence/Video
 
