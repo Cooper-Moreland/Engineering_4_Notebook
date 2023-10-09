@@ -432,6 +432,22 @@ Run static finite element analyses on your beam to determine what areas need to 
 
 Right where the thickness of the beam ends is where it's most likely to snap. Ours had a lot of determination to not snap and that's what really matters. The good news is we can't do worse so improving it will be easy, we'll most likely give up width for our next design and add height all the way through so it's less likely to break under the 30 Newtons of force.
 
+## fea_part_4
+
+### Description
+
+Use data from FEA simulations to improve the maximum weight the beam can hold before meeting one of the two failure conditions. Remember, the two failure conditions are the beam breaking, or bending >=35 mm
+
+### [Onshape Link](https://cvilleschools.onshape.com/documents/a4035a22ba64776340356020/w/11ed539d4eb836d893f3062b/e/5adecb98b448bac80376089d?renderMode=0&uiState=651ef85fed43c56222174dd1)
+
+### Part Image
+
+![1](
+
+### Reflection
+
+
+
 ## Onshape_Assignment_Template
 
 ### Description
@@ -445,8 +461,6 @@ Write your assignment description here. What is the purpose of this assignment? 
 ![1](
 
 ### Reflection
-
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
 
 &nbsp;
 
