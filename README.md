@@ -449,13 +449,13 @@ Use data from FEA simulations to improve the maximum weight the beam can hold be
 
 ### Reflection
 
-
+We improved our displacement by 3,149%. We completely redid our design, gave up width for height, and added a little bit of extra material at the bottom corners for support. Our new design is 12.86 grams with 13.3 mm of displacement. The stress map is mostly dark blue, if we had more time we could probably make improvements by adding support to all the corners at the base.
 
 ## Onshape_Assignment_Template
 
 ### Description
 
-Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences. 
 
 ### [Onshape Link](
 
