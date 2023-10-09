@@ -444,7 +444,7 @@ Use data from FEA simulations to improve the maximum weight the beam can hold be
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-09%20132937.png?raw=true)
 
-![1]
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-09%20133024.png?raw=true)
 
 ### Reflection
 
