@@ -11,6 +11,7 @@
 * [crash avoidance part 2](#crash_avoidance_part_2)
 * [crash avoidance part 3](#crash_avoidance_part_3)
 * [fea part 1](#fea_part_1)
+* [fea part 2](#fea_part_2)
 * [fea part 3](#fea_part_3)
 * [fea part 4](#fea_part_4)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
@@ -404,6 +405,10 @@ design a 3D-printed beam in Onshape with the goal of maximizing the weight the b
 ### Reflection
 
 Screenshots aren't as good as downloading an image of your Onshape build when you need a transparent background. To do that click the three pancakes button in the top left, click print, have it say letter then portrait, move object to the center of the square, then click download.
+
+## fea_part_2
+
+simulations consist of 5 different types of force applications the names and icons explain them enough. Choose the object you want the force applied to, choose the direction, and change the amount of force applied to however many newtons.
 
 # Onshape Pumpkin Contest Idea
 
