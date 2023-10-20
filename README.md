@@ -10,6 +10,10 @@
 * [crash avoidance part 1](#crash_avoidance_part_1)
 * [crash avoidance part 2](#crash_avoidance_part_2)
 * [crash avoidance part 3](#crash_avoidance_part_3)
+* [fea part 1](#fea_part_1)
+* [fea part 2](#fea_part_2)
+* [fea part 3](#fea_part_3)
+* [fea part 4](#fea_part_4)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -263,7 +267,7 @@ while True:
 
 ### Description
 
-The module must have an accelerometer that continuously reports x, y, and z acceleration values. The module must have an LED that turns on if the helicopter is tilted to 90 degrees. The module must be powered by a mobile power source.
+The module must have an accelerometer that continuously reports x, y, and z acceleration values. The module must have an LED that turns on if the helicopter is tilted to 90 degrees. The module must be powered by a mobile power source. One thing must be fixed and make the system you're using into a group.
 
 ### Evidence/Video
 
@@ -317,10 +321,13 @@ The module must have an accelerometer that continuously reports x, y, and z acce
 
 ### Wiring
 
-### Code
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-09-26%20125639.png?raw=true)
+
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/crash%20avoidance%20p3.py)
 
 ```python
 # type: ignore
+# libraries: adafruit_displayio_ssd1306.mpy | adafruit_display_text | adafruit_mpu6050.mpy | adafruit_bus_device | adafruit_register
 import time
 import adafruit_mpu6050
 import busio
@@ -372,25 +379,96 @@ while True:
 
 ### Reflection
 
+breadboards can connect to each other for more space. on the oled screen Clk goes to scl, Data goes to sda, reset pin can go to any random GP. Make sure the external battery is fully pugged in so it doesn't fry your board, but if that happens uninstall circuit python from vs code then reinstall.
+
 &nbsp;
 
-## Onshape_Assignment_Template
+## fea_part_1
 
-### Assignment Description
+### Description
 
-Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+design a 3D-printed beam in Onshape with the goal of maximizing the weight the beam can hold before failure. The beam fails if either of the following two conditions are met: The beam breaks The beam bends more than 35 mm. 
+* must use the provided attachment block with no modifications
+* The beam with the attachment block must be able to fully engage with the holder
+* must use the example eye bolt mounting geometry
+* The center of the eyebolt hole must be 180 mm from the front face of the attachment block (in a direction perpendicular to the front face)
+* No part of the beam may extend below the bottom face of the attachment block
+* All vertical angles must be >= 45° measured relative to the horizontal plane (no overhangs)
+* must be PLA material The entire beam, including attachment block, must weight <= 13 grams
 
-### Part Link 
-
-[Create a link to your Onshape document](https://cvilleschools.onshape.com/documents/003e413cee57f7ccccaa15c2/w/ea71050bb283bf3bf088c96c/e/c85ae532263d3b551e1795d0?renderMode=0&uiState=62d9b9d7883c4f335ec42021). Don't forget to turn on link sharing in your Onshape document so that others can see it. 
+### [Onshape Link](https://cvilleschools.onshape.com/documents/a4035a22ba64776340356020/w/11ed539d4eb836d893f3062b/e/6c6a605be107bca51b691821?renderMode=0&uiState=651c472fb79d590382eddea4)
 
 ### Part Image
 
-Take a nice screenshot of your Onshape document. 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-03%20125101.png?raw=true)
 
 ### Reflection
 
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+Screenshots aren't as good as downloading an image of your Onshape build when you need a transparent background. To do that click the three pancakes button in the top left, click print, have it say letter then portrait, move object to the center of the square, then click download.
+
+## fea_part_2
+
+simulations consist of 5 different types of force applications the names and icons explain them enough. Choose the object you want the force applied to, choose the direction, and change the amount of force applied to however many newtons.
+
+# Onshape Pumpkin Contest Idea
+
+Ms. Showalter as an evil witch.
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Tamara-Showalter-Laurel-Molloy.jpg?raw=true)
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/istockphoto-163922970-612x612.jpg?raw=true)
+
+## fea_part_3
+
+### Description
+
+Run static finite element analyses on your beam to determine what areas need to be improved.
+
+### [Onshape Link](https://cvilleschools.onshape.com/documents/a4035a22ba64776340356020/w/11ed539d4eb836d893f3062b/e/5adecb98b448bac80376089d?renderMode=0&uiState=651ef85fed43c56222174dd1)
+
+### Part Image
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-05%20134920.png?raw=true)
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-05%20135108.png?raw=true)
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-05%20135147.png?raw=true)
+
+### Reflection
+
+Right where the thickness of the beam ends is where it's most likely to snap. Ours had a lot of determination to not snap and that's what really matters. The good news is we can't do worse so improving it will be easy, we'll most likely give up width for our next design and add height all the way through so it's less likely to break under the 30 Newtons of force.
+
+## fea_part_4
+
+### Description
+
+Use data from FEA simulations to improve the maximum weight the beam can hold before meeting one of the two failure conditions. Remember, the two failure conditions are the beam breaking, or bending >=35 mm
+
+### [Onshape Link](https://cvilleschools.onshape.com/documents/a4035a22ba64776340356020/w/11ed539d4eb836d893f3062b/e/5adecb98b448bac80376089d?renderMode=0&uiState=651ef85fed43c56222174dd1)
+
+### Part Image
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-09%20132937.png?raw=true)
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-09%20133024.png?raw=true)
+
+### Reflection
+
+We improved our displacement by 3,149%. We completely redid our design, gave up width for height, and added a little bit of extra material at the bottom corners for support. Our new design is 12.86 grams with 13.3 mm of displacement. The stress map is mostly dark blue, if we had more time we could probably make improvements by adding support to all the corners at the base.
+
+## Onshape_Assignment_Template
+
+### Description
+
+Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences. 
+
+### [Onshape Link](
+
+### Part Image
+
+![1](
+
+### Reflection
 
 &nbsp;
 
