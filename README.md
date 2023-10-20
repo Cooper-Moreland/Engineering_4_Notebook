@@ -14,6 +14,7 @@
 * [fea part 2](#fea_part_2)
 * [fea part 3](#fea_part_3)
 * [fea part 4](#fea_part_4)
+* [landing area p1](#landing_area_p1)
 * [Onshape_Assignment_Template](#onshape_assignment_template)
 
 &nbsp;
@@ -381,6 +382,20 @@ while True:
 
 breadboards can connect to each other for more space. on the oled screen Clk goes to scl, Data goes to sda, reset pin can go to any random GP. Make sure the external battery is fully pugged in so it doesn't fry your board, but if that happens uninstall circuit python from vs code then reinstall.
 
+## landing_area_p1
+
+### Description
+
+## Evidence/Video
+
+## Wiring
+
+N/A
+
+## [Code](
+
+## Reflection
+
 &nbsp;
 
 ## fea_part_1
@@ -409,14 +424,6 @@ Screenshots aren't as good as downloading an image of your Onshape build when yo
 ## fea_part_2
 
 simulations consist of 5 different types of force applications the names and icons explain them enough. Choose the object you want the force applied to, choose the direction, and change the amount of force applied to however many newtons.
-
-# Onshape Pumpkin Contest Idea
-
-Ms. Showalter as an evil witch.
-
-![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Tamara-Showalter-Laurel-Molloy.jpg?raw=true)
-
-![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/istockphoto-163922970-612x612.jpg?raw=true)
 
 ## fea_part_3
 
