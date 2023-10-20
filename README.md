@@ -390,6 +390,8 @@ Write a script that takes three coordinates and returns the area using a functio
 
 ## Evidence/Video
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/landingareap1.gif?raw=true)
+
 ## Wiring
 
 N/A
@@ -438,6 +440,8 @@ while True:
 ```
 
 ## Reflection
+
+math functions are already in the raspberry pi so you can just look up triangle area formula and transfer it to code language. prints that require the user to type in them don't use print() they use input(). "{}" can be used in print to show values instead of just text.
 
 &nbsp;
 
