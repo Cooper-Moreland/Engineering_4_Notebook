@@ -456,7 +456,7 @@ Write a script that takes three coordinates and returns the area using a functio
 
 ## Wiring
 
-![1](
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-26%20125639.png?raw=true)
 
 ## [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/landing%20area%20p2.py)
 
