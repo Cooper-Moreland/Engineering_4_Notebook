@@ -458,9 +458,10 @@ Write a script that takes three coordinates and returns the area using a functio
 
 ![1](
 
-## [Code](
+## [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/landing%20area%20p2.py)
 
 ```python
+
 #type: ignore
 import time
 import terminalio
@@ -534,6 +535,7 @@ while True:
     splash.append(landing_area_display) # show the triangle on the oled screen
 
 ```
+
 ## Reflection
 
 
