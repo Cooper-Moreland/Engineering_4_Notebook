@@ -443,6 +443,26 @@ while True:
 
 math functions are already in the raspberry pi so you can just look up triangle area formula and transfer it to code language. prints that require the user to type in them don't use print() they use input(). "{}" can be used in print to show values instead of just text.
 
+## landing_area_p1
+
+### Description
+
+Write a script that takes three coordinates and returns the area using a function. The code must ask for the user to input a set of three coordinates in (x,y) format The triangle area must be determined using a function If the user inputs coordinates incorrectly (letters or improper format) the code should return to the input stage, it should not throw an error or exit the script The triangle area must be printed to the screen in this format: “The area of the triangle with vertices (x,y), (x,y), (x,y) is {area} square km. The code must return to the input stage after printing the area, and wait for user input. An onboard OLED screen must plot each triangle on a graph relative to the base location.
+
+## Evidence/Video
+
+![1](
+
+## Wiring
+
+![1](
+
+## [Code](
+
+
+## Reflection
+
+
 &nbsp;
 
 ## fea_part_1
