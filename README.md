@@ -10,6 +10,7 @@
 * [crash avoidance part 1](#crash_avoidance_part_1)
 * [crash avoidance part 2](#crash_avoidance_part_2)
 * [crash avoidance part 3](#crash_avoidance_part_3)
+* [landing area p1](#landing_area_p1)
 * [fea part 1](#fea_part_1)
 * [fea part 2](#fea_part_2)
 * [fea part 3](#fea_part_3)
@@ -381,6 +382,87 @@ while True:
 
 breadboards can connect to each other for more space. on the oled screen Clk goes to scl, Data goes to sda, reset pin can go to any random GP. Make sure the external battery is fully pugged in so it doesn't fry your board, but if that happens uninstall circuit python from vs code then reinstall.
 
+## landing_area_p1
+
+### Description
+
+Write a script that takes three coordinates and returns the area using a function. The code must ask for the user to input a set of three coordinates in (x,y) format The triangle area must be determined using a function If the user inputs coordinates incorrectly (letters or improper format) the code should return to the input stage, it should not throw an error or exit the script The triangle area must be printed to the screen in this format: “The area of the triangle with vertices (x,y), (x,y), (x,y) is {area} square km. The code must return to the input stage after printing the area, and wait for user input.
+
+## Evidence/Video
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/landingareap1.gif?raw=true)
+
+## Wiring
+
+N/A
+
+## [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/landing%20area.py)
+
+credit [River](https://github.com/rivques/Engr4Code.git) for the code
+
+```python
+
+import time
+
+def validate_input(input_string: str): # return false on error or an array of the form [x, y] on success
+    try:
+        input_parts = input_string.split(",") # a comma separates the coordinate points
+    except ValueError:
+        return False
+    if len(input_parts) != 2: # we expect an x and a y coordinate
+        return False
+    try:
+        result = [float(part) for part in input_parts] # turn the strings in input_parts into floats
+        return result
+    except ValueError: # if something wasn't a float
+        return False
+
+def get_area(p1, p2, p3): 
+    area = 0.5 * (p1[0] * (p2[1] - p3[1]) + p2[0] * (p3[1] - p1[1]) + p3[0] * (p1[1] - p2[1])) # math equation for area
+    return abs(area)
+
+while True:
+    vertex_1 = validate_input(input("Vertex 1: "))
+    if not vertex_1:
+        print("That was not the proper format. Please try again.")
+        continue    # serial print to enter coordinates and if the worng format is put return an error
+    vertex_2 = validate_input(input("Vertex 2: "))
+    if not vertex_2:
+        print("That was not the proper format. Please try again.")
+        continue
+    vertex_3 = validate_input(input("Vertex 3: "))
+    if not vertex_3:
+        print("That was not the proper format. Please try again.")
+        continue
+    area = get_area(vertex_1, vertex_2, vertex_3)   # call back to the math function plugging in the three points
+    print(f"The area of the triangle with vertices ({vertex_1[0]},{vertex_1[1]}), ({vertex_2[0]},{vertex_2[1]}), ({vertex_3[0]},{vertex_3[1]}) is {area} square km.")
+
+```
+
+## Reflection
+
+math functions are already in the raspberry pi so you can just look up triangle area formula and transfer it to code language. prints that require the user to type in them don't use print() they use input(). "{}" can be used in print to show values instead of just text.
+
+## landing_area_p1
+
+### Description
+
+Write a script that takes three coordinates and returns the area using a function. The code must ask for the user to input a set of three coordinates in (x,y) format The triangle area must be determined using a function If the user inputs coordinates incorrectly (letters or improper format) the code should return to the input stage, it should not throw an error or exit the script The triangle area must be printed to the screen in this format: “The area of the triangle with vertices (x,y), (x,y), (x,y) is {area} square km. The code must return to the input stage after printing the area, and wait for user input. An onboard OLED screen must plot each triangle on a graph relative to the base location.
+
+## Evidence/Video
+
+![1](
+
+## Wiring
+
+![1](
+
+## [Code](
+
+
+## Reflection
+
+
 &nbsp;
 
 ## fea_part_1
@@ -409,14 +491,6 @@ Screenshots aren't as good as downloading an image of your Onshape build when yo
 ## fea_part_2
 
 simulations consist of 5 different types of force applications the names and icons explain them enough. Choose the object you want the force applied to, choose the direction, and change the amount of force applied to however many newtons.
-
-# Onshape Pumpkin Contest Idea
-
-Ms. Showalter as an evil witch.
-
-![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Tamara-Showalter-Laurel-Molloy.jpg?raw=true)
-
-![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/istockphoto-163922970-612x612.jpg?raw=true)
 
 ## fea_part_3
 
