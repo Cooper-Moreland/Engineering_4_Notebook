@@ -452,7 +452,7 @@ Write a script that takes three coordinates and returns the area using a functio
 
 ## Evidence/Video
 
-![1](
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/landing%20area%20p2.gif?raw=true)
 
 ## Wiring
 
@@ -537,6 +537,7 @@ while True:
 ```
 
 ## Reflection
+
 
 
 &nbsp;
