@@ -538,7 +538,7 @@ while True:
 
 ## Reflection
 
-
+For the y-axis subtract the thing from 32 or whatever number for half of the vertical values (32-x no x-32). Making the center point at the center is a lot of writing the same thing over and over for each point but transforming it to a different coordinate on the oled so it matches the coordinate of where it would be on a normal graph. If you don't transform it right the triangle will most likely be graphed off the screen so it won't be seen.
 
 &nbsp;
 
