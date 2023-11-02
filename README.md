@@ -555,7 +555,7 @@ Write a morse code translator. This piece of code will translate text from the u
 
 N/A
 
-### [Code](
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/morse%20code%20p1.py)
 
 ```python
 
