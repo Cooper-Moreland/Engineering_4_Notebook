@@ -12,6 +12,7 @@
 * [crash avoidance part 3](#crash_avoidance_part_3)
 * [landing area p1](#landing_area_p1)
 * [landing area p2](#landing_area_p2)
+* [morse code p1](#morse_code_p1)
 * [fea part 1](#fea_part_1)
 * [fea part 2](#fea_part_2)
 * [fea part 3](#fea_part_3)
@@ -389,15 +390,15 @@ breadboards can connect to each other for more space. on the oled screen Clk goe
 
 Write a script that takes three coordinates and returns the area using a function. The code must ask for the user to input a set of three coordinates in (x,y) format The triangle area must be determined using a function If the user inputs coordinates incorrectly (letters or improper format) the code should return to the input stage, it should not throw an error or exit the script The triangle area must be printed to the screen in this format: “The area of the triangle with vertices (x,y), (x,y), (x,y) is {area} square km. The code must return to the input stage after printing the area, and wait for user input.
 
-## Evidence/Video
+### Evidence/Video
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/landingareap1.gif?raw=true)
 
-## Wiring
+### Wiring
 
 N/A
 
-## [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/landing%20area.py)
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/landing%20area.py)
 
 credit [River](https://github.com/rivques/Engr4Code.git) for the code
 
@@ -440,7 +441,7 @@ while True:
 
 ```
 
-## Reflection
+### Reflection
 
 math functions are already in the raspberry pi so you can just look up triangle area formula and transfer it to code language. prints that require the user to type in them don't use print() they use input(). "{}" can be used in print to show values instead of just text.
 
@@ -450,15 +451,15 @@ math functions are already in the raspberry pi so you can just look up triangle 
 
 Write a script that takes three coordinates and returns the area using a function. The code must ask for the user to input a set of three coordinates in (x,y) format The triangle area must be determined using a function If the user inputs coordinates incorrectly (letters or improper format) the code should return to the input stage, it should not throw an error or exit the script The triangle area must be printed to the screen in this format: “The area of the triangle with vertices (x,y), (x,y), (x,y) is {area} square km. The code must return to the input stage after printing the area, and wait for user input. An onboard OLED screen must plot each triangle on a graph relative to the base location.
 
-## Evidence/Video
+### Evidence/Video
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/landing%20area%20p2.gif?raw=true)
 
-## Wiring
+### Wiring
 
 ![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-10-26%20125639.png?raw=true)
 
-## [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/landing%20area%20p2.py)
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/landing%20area%20p2.py)
 
 ```python
 
@@ -536,9 +537,71 @@ while True:
 
 ```
 
-## Reflection
+### Reflection
 
 For the y-axis subtract the thing from 32 or whatever number for half of the vertical values (32-x no x-32). Making the center point at the center is a lot of writing the same thing over and over for each point but transforming it to a different coordinate on the oled so it matches the coordinate of where it would be on a normal graph. If you don't transform it right the triangle will most likely be graphed off the screen so it won't be seen.
+
+## morse_code_p1
+
+### Description
+
+Write a morse code translator. This piece of code will translate text from the user into a set of dots and dashes. Print those dots and dashes to the serial monitor.Your script must accept text input by the user If the user types “-q”, your script must exit If the user types anything else, your script must translate the text to morse code dots and dashes, and print those to the monitor The printed text must use a space to show breaks between letters, and a slash to show breaks between words
+
+### Evidence/Video
+
+
+
+### Wiring
+
+N/A
+
+### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/morse%20code%20p1.py)
+
+```python
+
+# type: ignore
+
+MORSE_CODE = { 'A':'.-', 'B':'-...',
+    'C':'-.-.', 'D':'-..', 'E':'.',
+    'F':'..-.', 'G':'--.', 'H':'....',
+    'I':'..', 'J':'.---', 'K':'-.-',
+    'L':'.-..', 'M':'--', 'N':'-.',
+    'O':'---', 'P':'.--.', 'Q':'--.-',
+    'R':'.-.', 'S':'...', 'T':'-',
+    'U':'..-', 'V':'...-', 'W':'.--',
+    'X':'-..-', 'Y':'-.--', 'Z':'--..',
+    '1':'.----', '2':'..---', '3':'...--',
+    '4':'....-', '5':'.....', '6':'-....',
+    '7':'--...', '8':'---..', '9':'----.',
+    '0':'-----', ', ':'--..--', '.':'.-.-.-',
+    '?':'..--..', '/':'-..-.', '-':'-....-',
+    '(':'-.--.', ')':'-.--.-'} # dictionary
+
+while True:
+    user_input = input("Enter the string to translate, or type '-q' to quit. ")
+    user_input = user_input.upper() # change lowercase to uppercase
+    if user_input == "-Q": # uppercase because of the previous line
+        break # if you input q it quits
+    morse_translation = ""
+    translation_good = True # flag to be set if we hit an unknown character
+    for letter in user_input:
+        if letter == " ":
+            morse_translation += "/" # a space in the input translates to a break or "/" in morse
+        else:
+            try:
+                morse_translation += MORSE_CODE[letter] + " " # for spaces between characters
+            except KeyError:
+                print(f"Unsupported character \"{letter}\" used. Please try again.") # if there's an error type this
+                translation_good = False
+                break # go to next line
+    if translation_good:
+        print(morse_translation) # if nothing goes wrong print the translation
+
+```
+
+### Reflection
+
+I'm super fluent in morse code now. Making a space into a / for morse code was difficult but you just need += instead of just =. That also helped with spaces between characters. break means stop inputs on the current line and start a new line in the serial monitor.
 
 &nbsp;
 
