@@ -603,6 +603,28 @@ while True:
 
 I'm super fluent in morse code now. Making a space into a / for morse code was difficult but you just need += instead of just =. That also helped with spaces between characters. break means stop inputs on the current line and start a new line in the serial monitor.
 
+## morse_code_p2
+
+### Description
+
+
+
+### Evidence/Video
+
+
+
+### Wiring
+
+
+
+### [Code](
+
+
+
+### Reflection
+
+
+
 &nbsp;
 
 ## fea_part_1
