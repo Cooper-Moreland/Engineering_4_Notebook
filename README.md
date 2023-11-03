@@ -546,7 +546,7 @@ For the y-axis subtract the thing from 32 or whatever number for half of the ver
 
 ### Description
 
-Write a morse code translator. This piece of code will translate text from the user into a set of dots and dashes. Print those dots and dashes to the serial monitor.Your script must accept text input by the user If the user types “-q”, your script must exit If the user types anything else, your script must translate the text to morse code dots and dashes, and print those to the monitor The printed text must use a space to show breaks between letters, and a slash to show breaks between words
+Write a morse code translator. This piece of code will translate text from the user into a set of dots and dashes. Print those dots and dashes to the serial monitor.Your script must accept text input by the user If the user types “-q”, your script must exit If the user types anything else, your script must translate the text to morse code dots and dashes, and print those to the monitor The printed text must use a space to show breaks between letters, and a slash to show breaks between words.
 
 ### Evidence/Video
 
@@ -608,7 +608,7 @@ I'm super fluent in morse code now. Making a space into a / for morse code was d
 
 ### Description
 
-
+Write a morse code translator. This piece of code will translate text from the user into a set of dots and dashes. Print those dots and dashes to the serial monitor.Your script must accept text input by the user If the user types “-q”, your script must exit If the user types anything else, your script must translate the text to morse code dots and dashes, and print those to the monitor The printed text must use a space to show breaks between letters, and a slash to show breaks between words. The script must flash an LED to transmit the morse code message using the timing sequence shown below.
 
 ### Evidence/Video
 
