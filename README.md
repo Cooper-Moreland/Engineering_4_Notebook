@@ -615,7 +615,7 @@ I'm super fluent in morse code now. Making a space into a / for morse code was d
 
 ### Wiring
 
-
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-11-03%20132046.png?raw=true)
 
 ### [Code](
 
