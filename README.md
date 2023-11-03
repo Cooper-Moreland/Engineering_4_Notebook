@@ -612,7 +612,7 @@ Write a morse code translator. This piece of code will translate text from the u
 
 ### Evidence/Video
 
-
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/morsecodep2.gif?raw=true)
 
 ### Wiring
 
@@ -678,7 +678,7 @@ while True:
             on_delay = delayz[character]
             off_delay = delayz[character] # import the delays I set earlier into this if statement
             if on_delay == 0:
-                time.sleep(off_delay)
+                time.sleep(off_delay) # led is off if nothing to type
             else:
                 led.value = True
                 time.sleep(on_delay)
@@ -688,7 +688,7 @@ while True:
 
 ### Reflection
 
-
+Make sure to include commas after each line when setting the "delayz." You have to make new variables in the section making the led blink so it knows how long to have the led on and off. If statement is if there is nothing in the serial monitor as an input. Else statement is for if there's something to type and it's just a regular blinking led funtion.
 
 &nbsp;
 
