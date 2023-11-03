@@ -612,7 +612,7 @@ Write a morse code translator. This piece of code will translate text from the u
 
 ### Evidence/Video
 
-
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/morsecodep2.gif?raw=true)
 
 ### Wiring
 
