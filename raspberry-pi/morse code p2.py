@@ -55,7 +55,7 @@ while True:
             on_delay = delayz[character]
             off_delay = delayz[character] # import the delays I set earlier into this if statement
             if on_delay == 0:
-                time.sleep(off_delay)
+                time.sleep(off_delay) # led is off if nothing to type
             else:
                 led.value = True
                 time.sleep(on_delay)
