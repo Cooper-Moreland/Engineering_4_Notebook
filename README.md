@@ -649,10 +649,10 @@ led.direction = digitalio.Direction.OUTPUT # led as an output on gp16
 modifier = 0.25 # base delay for led
 
 delayz = {
-".": 1*modifier
-"-": 3*modifier
-" ": 3*modifier
-"/": 7*modifier # time in between flashes for each character
+    ".": 1*modifier,
+    "-": 3*modifier,
+    " ": 3*modifier,
+    "/": 7*modifier # time in between flashes for each character
 }
 
 while True:
@@ -675,14 +675,15 @@ while True:
     if translation_good:
         print(morse_translation) # if nothing goes wrong print the translation
         for character in morse_translation:
-            on_delay, off_delay = delayz[character] # import the delays I set earlier into this if statement
+            on_delay = delayz[character]
+            off_delay = delayz[character] # import the delays I set earlier into this if statement
             if on_delay == 0:
                 time.sleep(off_delay)
             else:
                 led.value = True
                 time.sleep(on_delay)
                 led.value = False
-                time.sleep(off_delay) # blinky blinky for the led
+                time.sleep(off_delay) # blinky blinky for the led based on timing
 ```
 
 ### Reflection
