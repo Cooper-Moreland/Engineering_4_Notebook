@@ -14,6 +14,7 @@
 * [landing area p2](#landing_area_p2)
 * [morse code p1](#morse_code_p1)
 * [morse code p2](#morse_code_p2)
+* [data p1](#data_p1)
 * [fea part 1](#fea_part_1)
 * [fea part 2](#fea_part_2)
 * [fea part 3](#fea_part_3)
@@ -688,7 +689,21 @@ while True:
 
 ### Reflection
 
-Make sure to include commas after each line when setting the "delayz." You have to make new variables in the section making the led blink so it knows how long to have the led on and off. If statement is if there is nothing in the serial monitor as an input. Else statement is for if there's something to type and it's just a regular blinking led funtion.
+Make sure to include commas after each line when setting the "delayz." You have to make new variables in the section making the led blink so it knows how long to have the led on and off. If statement is if there is nothing in the serial monitor as an input. Else statement is for if there's something to type and it's just a regular blinking led function.
+
+## data_p1
+
+### Description
+
+In this assignment, you will take data from your accelerometer, store it onboard the Pico, and then open it on your computer. Your Pico must operate in “headless” mode – unplugged from the computer with a battery. An LED must turn on when the Pico is tilted (same as Crash Avoidance Part 2). Your Pico must record time, X, Y, Z, acceleration data, and whether or not the Pico was tilted. You must save this information to the Pico’s onboard storage. You must blink the onboard LED every time you save data. You must be able to retrieve this data when plugged back into the computer.
+
+### Evidence/Video
+
+### Wiring
+
+### [Code](
+
+### Reflection
 
 &nbsp;
 
