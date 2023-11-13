@@ -703,6 +703,8 @@ In this assignment, you will take data from your accelerometer, store it onboard
 
 ### Wiring
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-11-13%20133132.png?raw=true)
+
 ### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/data/data%20p1.py)
 
 ```python
