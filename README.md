@@ -15,6 +15,7 @@
 * [morse code p1](#morse_code_p1)
 * [morse code p2](#morse_code_p2)
 * [data p1](#data_p1)
+* [data p2](#data_p2)
 * [fea part 1](#fea_part_1)
 * [fea part 2](#fea_part_2)
 * [fea part 3](#fea_part_3)
@@ -759,6 +760,8 @@ while True:
 ## data_p2
 
 ### Description
+
+Create a line graph with time on the X-axis and acceleration on the Y-axis. X, Y, and Z accelerations must be present on the same plot. Create a chart with time on the X axis and whether or not the Pico was tilted on the Y axis.  Title each graph, and label each axis including units. 
 
 ### Evidence/Video
 
