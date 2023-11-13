@@ -765,9 +765,15 @@ Create a line graph with time on the X-axis and acceleration on the Y-axis. X, Y
 
 ### Evidence/Video
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-11-13%20135412.png?raw=true)
+
 ### Wiring
 
-### [Code](
+N/A
+
+### Code
+
+N/A
 
 ### Reflection
 
