@@ -778,6 +778,8 @@ N/A
 
 ### Reflection
 
+This is just creating a graph using google sheets. To include the full column of data use (column letter):(column letter) e.g. A:A. I had to use ctrl + f to replace my trues and falses with 0's and 1's to have it work with a bar graph.
+
 &nbsp;
 
 ## fea_part_1
