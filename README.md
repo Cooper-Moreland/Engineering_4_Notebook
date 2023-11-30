@@ -15,6 +15,7 @@
 * [morse code p1](#morse_code_p1)
 * [morse code p2](#morse_code_p2)
 * [data p1](#data_p1)
+* [data p2](#data_p2)
 * [fea part 1](#fea_part_1)
 * [fea part 2](#fea_part_2)
 * [fea part 3](#fea_part_3)
@@ -703,6 +704,8 @@ In this assignment, you will take data from your accelerometer, store it onboard
 
 ### Wiring
 
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-11-13%20133132.png?raw=true)
+
 ### [Code](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/raspberry-pi/data/data%20p1.py)
 
 ```python
@@ -753,6 +756,29 @@ while True:
 ### Reflection
 
 [data](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/data.csv)
+
+## data_p2
+
+### Description
+
+Create a line graph with time on the X-axis and acceleration on the Y-axis. X, Y, and Z accelerations must be present on the same plot. Create a chart with time on the X axis and whether or not the Pico was tilted on the Y axis.  Title each graph, and label each axis including units. 
+
+### Evidence/Video
+
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-11-13%20135412.png?raw=true)
+![1](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/Screenshot%202023-11-13%20135747.png?raw=true)
+
+### Wiring
+
+N/A
+
+### Code
+
+N/A
+
+### Reflection
+
+This is just creating a graph using google sheets. To include the full column of data use (column letter):(column letter) e.g. A:A. I had to use ctrl + f to replace my trues and falses with 0's and 1's to have it work with a bar graph.
 
 &nbsp;
 
