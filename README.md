@@ -755,7 +755,7 @@ while True:
 
 ### Reflection
 
-[data](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/data.csv)
+[data](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/data.csv) must unplug pico to switch between data and code mode.
 
 ## data_p2
 
