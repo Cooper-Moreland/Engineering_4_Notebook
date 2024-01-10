@@ -32,6 +32,7 @@ while True:
             csv_string = f"{time_elapsed},{altitude}\n"
             # f string showing time and altitude
             datalog.write(csv_string) # record f string in separate columns in microsoft excel
+            # to switch between data and code mode unplug the pico then flip the switch connected to GP0
             led.value = True
             time.sleep(0.1)
             led.value = False
