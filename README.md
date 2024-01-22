@@ -755,7 +755,7 @@ while True:
 
 ### Reflection
 
-[data](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/data.csv) must unplug pico to switch between data and code mode.
+[data](https://github.com/Cooper-Moreland/Engineering_4_Notebook/blob/main/data.csv) must unplug pico to switch between data and code mode. Choosing the value for whether or not the led turns on was mostly trial and error. Just copy and paste the lines of code to call back to the boot.py file and make sure the boot.py file is on the d drive.
 
 ## data_p2
 
